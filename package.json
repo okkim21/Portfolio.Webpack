@@ -7,13 +7,14 @@
     "dev": "webpack-dev-server",
     "prod": "npm run clean && NODE_ENV=production webpack -p",
     "clean": "rimraf ./dist/*",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "npm run clean && NODE_ENV=production webpack -p"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "bootstrap-loader": "^2.1.0",
-    "bootstrap-sass": "^3.3.7",
     "cdn-loader": "^0.1.8-0",
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
