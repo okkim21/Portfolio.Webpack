@@ -44,10 +44,11 @@ Header styles
 }
 .main-image{
     position: absolute;
-    background: url(../images/portfolio-main-image.png) no-repeat;
+    background: require('../images/portfolio-main-image.png') no-repeat;
     height: 100%;
     width: 100%;
 }
+/*url(../images/portfolio-main-image.png)*/
 .header-content {
     position: absolute;
     width: 100%;
