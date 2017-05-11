@@ -11,9 +11,9 @@
     "start": "node server.js",
     "postinstall": "npm run clean && NODE_ENV=production webpack -p"
   },
-  "engines":{
-    "node":"6.9.2",
-    "npm":"3.10.9"
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
   },
   "author": "",
   "license": "ISC",
@@ -37,7 +37,6 @@
     "source-map-loader": "^0.2.1",
     "style-loader": "^0.17.0",
     "url-loader": "^0.5.8",
-    "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
@@ -45,6 +44,7 @@
     "bootstrap-sass": "^3.3.7",
     "express": "^4.15.2",
     "jquery": "^3.2.1",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "webpack": "^2.5.1"
   }
 }
