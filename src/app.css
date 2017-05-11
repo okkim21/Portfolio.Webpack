@@ -44,7 +44,7 @@ Header styles
 }
 .main-image{
     position: absolute;
-    background: require('../images/portfolio-main-image.png') no-repeat;
+    background: url(../images/portfolio-main-image.png)  no-repeat;
     height: 100%;
     width: 100%;
 }
