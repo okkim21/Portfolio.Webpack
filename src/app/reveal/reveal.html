@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reveal Effect</title>
+    <meta name="viewport" content="width=device-width, initial-scal=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header class="global-header">
+        <h1>Everyday Meals</h1>
+        <nav class="global-nav">
+            <a href="/">About</a>
+            <a href="/">All Recipes</a>
+            <a href="/">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Feature image -->
+        
+        <img class="feature-img" src=<%= require("./images/feature-image.jpg") %> alt="feature image">
+        <section>
+            <h2 class="title">Featured Recipes</h2>
+            <div class="food-wrapper">
+
+                <section class="food-container">
+                    
+                    <img src=<%= require("./images/dinner-ideas-pasta.jpg") %> alt="Pasta for dinner ideas">
+                    <h3>Dinner Ideas</h3>
+                    <p>Cupcake ipsum chocolate pudding biscuit. Croissant tootsie roll lemon drops marzipan. Apple pie dessert chocolate. Chocolate cake bear claw muffin. Jelly biscuit cotton candy toffee cake marshmallow sweet roll tiramisu. </p>
+                    <a href="/">Read more</a>
+                </section>
+                <section class="food-container">
+                    
+                    <img src=<%= require("./images/side-dishes-carrots.jpg") %> alt="Carrots for side dish ideas">
+                    <h3>Tasty Sides</h3>
+                    <p>Tart ice cream topping croissant jelly. Tootsie roll apple pie ice cream muffin halvah. Apple pie cupcake tiramisu chupa chups sweet halvah jelly. Chocolate candy macaroon topping cake halvah. </p>
+                    <a href="/">Read more</a>
+                </section>
+            </div>
+        </section>
+        <section id="reveal-effect">
+            <div class="wrapper">
+                <h2>Customized your own burger</h2>
+
+                <ol class="parts">
+                    <li class="part1">
+                        <h3>Hamburger</h3>
+                    </li>
+                    <li class="part2">
+                        <h3>Tomato Sauce</h3>
+                    </li>
+                    <li class="part3">
+                        <h3>Onion</h3>
+                    </li>
+                    <li class="part4">
+                        <h3>Egg</h3>
+                    </li>
+                    <li class="part5">
+                        <h3>Mustard Sauce</h3>
+                    </li>
+                    <li class="part6">
+                        <h3>Beef / Chicken</h3>
+                    </li>
+                    <li class="part7">
+                        <h3>Bacon</h3>
+                    </li>
+                    <li class="part8">
+                        <h3>Spinach</h3>
+                    </li>
+                    <li class="part9">
+                        <h3>Hamburder</h3>
+                    </li>
+                </ol>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-wraper">
+            <p>Front End</p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+
+/*-------------------------------
+Font
+--------------------------------*/
+
+@font-face {
+    font-family: 'Okomito-Regular';
+    src: url('./fonts/Okomito-Regular.eot');
+    src: url('./fonts/Okomito-Regular.woff2') format('woff2'),
+    url('./fonts/Okomito-Regular.woff') format('woff'),
+    url('./fonts/Okomito-Regular.ttf') format('truetype'),
+    url('./fonts/Okomito-Regular.svg#Okomito-Regular') format('svg'),
+    url('./fonts/Okomito-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Okomito-Medium';
+    src: url('./fonts/Okomito-Medium.eot');
+    src: url('./fonts/Okomito-Medium.woff2') format('woff2'),
+    url('./fonts/Okomito-Medium.woff') format('woff'),
+    url('./fonts/Okomito-Medium.ttf') format('truetype'),
+    url('./fonts/Okomito-Medium.svg#Okomito-Medium') format('svg'),
+    url('./fonts/Okomito-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Okomito-Bold';
+    src: url('./fonts/Okomito-Bold.eot');
+    src: url('./fonts/Okomito-Bold.woff2') format('woff2'),
+    url('./fonts/Okomito-Bold.woff') format('woff'),
+    url('./fonts/Okomito-Bold.ttf') format('truetype'),
+    url('./fonts/Okomito-Bold.svg#Okomito-Bold') format('svg'),
+    url('./fonts/Okomito-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------------------------
+Base styles
+------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding:  0;
+    font-family: 'Okomito-Regular', Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+}
+html, body {
+    height: 100%;
+}
+
+/*-----------------------------
+Logo style
+-------------------------------*/
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.logo span {
+    display: block;
+    margin-top: 15px;
+    color: #9b9b9b;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.snowflake {
+    opacity: .6;
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+
+.snowflake:hover {
+    ms-transform: rotate(360deg);
+    webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+/*----------------------------------------
+   Navigation styles
+   ------------------------------------------*/
+.nav-container {
+    display: none;
+   }
+/*---------------------------------------
+Slide styles
+----------------------------------------*/
+.slide {
+    height: 100vh;
+    text-align: center;
+}
+.primary,
+.secondary {
+    height: 50%;
+    position: relative;
+    color: #fff;
+}
+.bcg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    opacity: 1;
+}
+.primary {
+    color: #FC866E;
+}
+.primary-text {
+    font-size: 80px;
+    font-family: 'Okomito-Bold';
+    margin: 0;
+    line-height: 80px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+.title {
+    font-family: 'Okomito-Bold';
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    opacity: .8 !important;
+
+}
+.title strong {
+    background-color: #9b9b9b;
+    margin-bottom: 3px;
+}
+.title em {
+    background-color: #9b9b9b;
+    margin-bottom: 3px;
+    font-style: normal;
+}
+.title span {
+    background-color: #9b9b9b;
+    opacity: .8;
+}
+.fade-txt {
+    display: block;
+}
+
+/* Color */
+#slide01 {
+    /*background: linear-gradient(to right, #fc866e 0%, #fc866e 37%, #fd746c 100%) ;*/
+}
+#slide01 .secondary {
+    background: url('./images/ski-s-image.png') no-repeat;
+}
+#slide02 {
+    /*background: linear-gradient(to right, #6C45BB 0%,#6C45BB 37%,#c86dd7 100%);*/
+}
+#slide02 .primary {
+    color: #6C45BB;
+}
+#slide02 .secondary {
+    background: url('./images/hiking-s-image.png') no-repeat;
+}
+#slide03 {
+    /*background: linear-gradient(to right, #2D5978 0%, #2D5978 37%,#2c3e50 100%);*/
+}
+#slide03 .primary {
+    color: #2D5978;
+}
+#slide03 .secondary {
+    background: url('./images/slope-s-image.png') no-repeat;
+}
+
+#slide04 {
+    /*background: linear-gradient(to right, #B33259 0%, #B33259 37%,#8A4185 100%);*/
+}
+#slide04 .primary {
+    color:#B33259;
+}
+#slide04 .secondary {
+    background: url('./images/winery-s-image.jpg') no-repeat;
+}
+
+#slide05 {
+    /*background: linear-gradient(to right, #71B26C 0%, #71B26C 37%,#C6C557 100%);*/
+}
+#slide05 .primary {
+    color:#71B26C;
+}
+#slide05 .secondary {
+    background: url('./images/shopping-s-image.jpg') no-repeat;
+}
+
+
+/*---------------------------------------
+Responsive
+-----------------------------------------*/
+@media only screen and (min-width: 480px) {
+    .primary-text {
+       font-size: 120px;
+       line-height: 120px;
+    }
+    #slide01 .secondary {
+        background: url('./images/ski-m-image.png') no-repeat;
+    }
+    #slide02 .secondary {
+        background: url('./images/hiking-m-image.png') no-repeat;
+    }
+    #slide03 .secondary {
+        background: url('./images/slope-m-image.png') no-repeat;
+    }
+    #slide04 .secondary {
+        background: url('./images/winery-m-image.jpg') no-repeat;
+    }
+    #slide05 .secondary {
+        background: url('./images/shopping-m-image.jpg') no-repeat;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        opacity: 0;
+    }
+
+    /*-----------------------------
+    Logo styles
+    ------------------------------*/
+    .logo-container {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 37%;
+        margin-top: -155px;
+    }
+    .logo {
+        right:7%;
+        left: auto;
+        visibility: hidden;
+    }
+
+    /*----------------------------------------
+    Navigation styles
+    ------------------------------------------*/
+    .nav-container {
+        position: absolute;
+        display: block;
+        top: 40%;
+        margin-top: 140px;
+        width: 37%;
+        z-index: 11;
+        height: 10px;
+    }
+    nav {
+        position: absolute;
+        right: 7%;
+        width: 130px;
+        height: 24px;
+        margin-top: 10px;
+        display: block;
+    }
+    .nav-items {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        top: 5px;
+    }
+    .nav-items li {
+        position: relative;
+        left: 5px;
+        float: left;
+        margin-right: 14px;
+        width: 12px;
+        height: 12px;
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    .nav-items a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999em;
+        transition: background-color 0.3s linear;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .nav-items .active a {
+        background-color: #fc866e;
+    }
+    .nav-active {
+        width: 22px;
+        height: 22px;
+        border: 1px #fc866e solid;
+        border-radius: 100%;
+        transition: border-color 0.3s linear;
+    }
+    .nav-container span {
+        position: absolute;
+        right: 7%;
+        width: 200px;
+        height: 10px;
+        margin-top: 50px;
+        font-size: 12px;
+        color: lightgrey;
+        opacity: 0.5;
+    }
+
+    /*-------------------------------------
+    Fake height styles
+    ---------------------------------------*/
+    .fake-height {
+        height: 500%;
+    }
+    main {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+    .pin-wrapper {
+        bottom:0 !important;
+    }
+    .nav-trigger {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        z-index: 100;
+        background-color: green;
+        visibility: hidden;
+    }
+    .slide-pos {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        z-index: 100;
+        background-color: yellow;
+        visibility: hidden;
+    }
+    #slide02-pos {top: 140%;}
+    #slide03-pos {top: 240%;}
+    #slide04-pos {top: 340%;}
+    #slide05-pos {top: 440%;}
+
+    .slide-pos-reverse {
+        position: absolute;
+        top: 70%;
+        left: 75%;
+        width: 10px;
+        height: 10px;
+        z-index: 200;
+        background-color: black;
+        visibility: hidden;
+    }
+    #slide02-pos-reverse {top: 170%;}
+    #slide03-pos-reverse {top: 270%;}
+    #slide04-pos-reverse {top: 370%;}
+
+    /*---------------------------------------
+    Slide styles
+    ----------------------------------------*/
+    .slide {
+        height: auto;
+        text-align: inherit;
+        visibility: hidden;
+    }
+    .slide.active {
+        visibility: visible;
+    }
+    .secondary,
+    .primary {
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .primary {
+        width: 37%;
+    }
+    .bcg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        transform: scaleX(1);
+        transform-origin: 0 50%;
+        opacity: 1;
+    }
+    .bcg-color,
+    .bcg-white {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .bcg-white {
+        background-color: #fff;
+        z-index: 2;
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
+    }
+    .secondary {
+        width: 63%;
+        left: auto;
+        right: 0;
+        color: #fff;
+    }
+    .primary-text {
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        left: auto;
+        font-weight: 800;
+    }
+    .title {
+        position: absolute;
+        top: 49%;
+        left: 5%;
+        font-size: 60px;
+        line-height: 65px;
+    }
+    #slide01 .bcg-color {
+        /*background: linear-gradient(to right, #fc866e 0%, #fc866e 37%, #fd746c 100%) ;*/
+        background: url('./images/ski-main-image.png') no-repeat;
+    }
+    #slide01 .primary {
+        color: #fc866e;
+    }
+    #slide01 .secondary {
+        background: none;
+    }
+
+    #slide02 .bcg-color {
+        /*background: linear-gradient(to right, #6C45BB 0%,#6C45BB 37%,#c86dd7 100%);*/
+    }
+    #slide02 .primary {
+        color: #6C45BB;
+    }
+    #slide02 .secondary {
+        background: url('./images/hiking-image.png') no-repeat;
+    }
+
+    #slide03 .bcg-color {
+        /*background: linear-gradient(to right, #2D5978 0%, #2D5978 37%,#2c3e50 100%);*/
+    }
+    #slide03 .primary {
+        color: #2D5978;
+    }
+    #slide03 .secondary {
+        background: url('./images/slope-image.png') no-repeat;
+    }
+
+    #slide04 .bcg-color {
+        /*background: linear-gradient(to right, #B33259 0%, #B33259 37%,#8A4185 100%);*/
+    }
+    #slide04 .primary {
+        color:#B33259;
+    }
+    #slide04 .secondary {
+        background: url('./images/winery-image.jpg') no-repeat;
+    }
+
+    #slide05 .bcg-color {
+        /*background: linear-gradient(to right, #71B26C 0%, #71B26C 37%,#C6C557 100%);*/
+    }
+    #slide05 .primary {
+        color:#71B26C;
+    }
+    #slide05 .secondary {
+        background: url('./images/shopping-image.jpg') no-repeat;
+    }
+
+
+    .slide01-active .nav-active {border-color: #FC866E;}
+    .slide01-active .nav-items .active a {background-color:#FC866E;}
+
+    .slide02-active .nav-active {border-color: #6C45BB;}
+    .slide02-active .nav-items .active a {background-color:#6C45BB;}
+
+    .slide03-active .nav-active {border-color: #2D5978;}
+    .slide03-active .nav-items .active a {background-color:#2D5978;}
+
+    .slide04-active .nav-active {border-color: #B33259;}
+    .slide04-active .nav-items .active a {background-color:#B33259;}
+
+    .slide05-active .nav-active {border-color: #71B26C;}
+    .slide05-active .nav-items .active a {background-color:#71B26C;}
+
+
+}
+
+@media only screen and (min-width: 1140px) {
+    .primary-text {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+}

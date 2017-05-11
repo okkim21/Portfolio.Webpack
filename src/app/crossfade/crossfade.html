@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cross-fade</title>
+    <meta name="viewport" content="width=device-width, initial-scal=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <main class="slide01-active">
+        <div class="pin-wrapper">
+
+            <div class="logo-container">
+                <p class="logo">
+                    
+                    <img class="snowflake" src=<%= require("./images/snowflake.png") %> alt="logo">
+                    <span>Where the snow is!</span>
+                </p>
+            </div>
+            <div  class="nav-container">
+                <nav>
+                    <div class="nav-active"></div>
+                    <ul class="nav-items">
+                        <li class="nav-item01 active"><a href="#slide01">Slide01</a></li>
+                        <li class="nav-item02"><a href="#slide02">Slide02</a></li>
+                        <li class="nav-item03"><a href="#slide03">Slide03</a></li>
+                        <li class="nav-item04"><a href="#slide04">Slide04</a></li>
+                        <li class="nav-item05"><a href="#slide05">Slide05</a></li>
+
+                    </ul>
+                </nav>
+                <span>Scroll down or up to see other pages!</span>
+            </div>
+
+            <div id="slide01" class="slide active">
+                <div class="bcg-color"></div>
+                <div class="bcg-white"></div>
+                <div class="primary">
+                    <div class="bcg"></div>
+                    <p class="primary-text">Snow</p>
+                </div>
+                <div class="secondary">
+                    <p class="title">
+                        <strong class="fade-txt">whistler</strong>
+                        <em class="fade-txt">ski</em>
+                        <span class="fade-txt">resort</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="slide02" class="slide">
+                <div class="bcg-color"></div>
+                <div class="bcg-white"></div>
+                <div class="primary">
+                    <div class="bcg"></div>
+                    <p class="primary-text">Hiking</p>
+                </div>
+                <div class="secondary">
+                    <p class="title">
+                        <strong class="fade-txt">girl</strong>
+                        <em class="fade-txt">hiking on</em>
+                        <span class="fade-txt">snowy hill</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="slide03" class="slide">
+                <div class="bcg-color"></div>
+                <div class="bcg-white"></div>
+                <div class="primary">
+                    <div class="bcg"></div>
+                    <p class="primary-text">Slopes</p>
+                </div>
+                <div class="secondary">
+                    <p class="title">
+                        <strong class="fade-txt">mountain</strong>
+                        <em class="fade-txt">top</em>
+                    </p>
+                </div>
+            </div>
+
+            <div id="slide04" class="slide">
+                <div class="bcg-color"></div>
+                <div class="bcg-white"></div>
+                <div class="primary">
+                    <div class="bcg"></div>
+                    <p class="primary-text">Winery</p>
+                </div>
+                <div class="secondary">
+                    <p class="title">
+                        <strong class="fade-txt">sun and clouds</strong>
+                        <em class="fade-txt">over</em>
+                        <span class="fade-txt">snowy wineyard</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="slide05" class="slide">
+                <div class="bcg-color"></div>
+                <div class="bcg-white"></div>
+                <div class="primary">
+                    <div class="bcg"></div>
+                    <p class="primary-text">Shopping</p>
+                </div>
+                <div class="secondary">
+                    <p class="title">
+                        <strong class="fade-txt">family</strong>
+                        <em class="fade-txt">time</em>
+                        <span class="fade-txt"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fake-height">
+            <div id="slide01-pos"></div>
+            <div id="slide02-pos" class="slide-pos"></div>
+            <div id="slide03-pos" class="slide-pos"></div>
+            <div id="slide04-pos" class="slide-pos"></div>
+            <div id="slide05-pos" class="slide-pos"></div>
+            <div id="slide01-pos-reverse" class="slide-pos-reverse"></div>
+            <div id="slide02-pos-reverse" class="slide-pos-reverse"></div>
+            <div id="slide03-pos-reverse" class="slide-pos-reverse"></div>
+            <div id="slide04-pos-reverse" class="slide-pos-reverse"></div>
+            <div id="slide05-pos-reverse"></div>
+            <div class="nav-trigger"></div>
+        </div>
+    </main>
+
+<!-- Javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/plugins/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+</body>
+</html>

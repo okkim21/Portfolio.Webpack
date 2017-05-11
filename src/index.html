@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="main-image"></div>
+        <div class="header-content">
+            <h3 id="name">OK KIM</h3>
+            <p class="greeting" id="greeting-text">Hello,</p>
+            <div class="content01">
+                <p id="content01-01">I'm a Front-End Web Developer</p>
+                <p id="content01-02">who has a full understanding of Software Development Life Cycle. </p>
+            </div>
+            <div class="content02">
+                <p id="content02-01">I built the front-end of these web sites using HTML, CSS, SASS, Javascript, GASP(Green Socks),ScrollMagic,
+                    Bootstrap, Angular UI and other plugins. </p>
+                <p id="content02-02">These web sites have been built as my portfolio and some of assets (layout, images) are taken from other
+                    resources.
+                </p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <h2>PORTFOLIO</h2>
+        </div>
+        <div class="portfolio-first">
+            <div id="scroll-scene" class="portfolio-item">
+                <a href="./scroll.html">
+                    <div class="hover-image"></div>
+                    <img src=<%=require( "../images/scrollmagic-image.png") %>>
+                    <div class="overlay">
+                        <span class="title">Parallax scrolling</span>
+                    </div>
+                </a>
+            </div>
+            <div id="responsive-scene" class="portfolio-item">
+                <a href="./responsive.html">
+                    <div class="hover-image"></div>
+                    <img src=<%=require( "../images/responsive-image.png") %>>
+                    <div class="overlay">
+                        <span class="title">Mobile first, responsive design</span>
+
+                    </div>
+                </a>
+            </div>
+            <div id="video-scene" class="portfolio-item">
+                <a href="./video.html">
+                    <div class="hover-image"></div>
+                    <img src=<%=require( "../images/video-image.png") %>>
+                    <div class="overlay">
+                        <span class="title">HTML5 Video</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="portfolio-second">
+            <div id="taekwondo-scene" class="portfolio-item">
+                <a class="link" href="http://www.ustamartialarts-stanwood.com/">
+                    <div class="hover-image"></div>
+
+                    <img src=<%=require( "../images/taekwondo-image.png") %>>
+                    <div class="overlay">
+                        <span class="title">Javascript(GSAP) animation effect</span>
+
+                    </div>
+                </a>
+            </div>
+            <div id="pin-scene" class="portfolio-item">
+                <a class="link" href="./pin.html">
+                    <div class="hover-image"></div>
+                    <img src=<%=require( "../images/pin-image.png") %>>
+                    <div class="overlay">
+                        <span class="title">Pin effect</span>
+
+                    </div>
+                </a>
+            </div>
+            <div id="crossfade-scene" class="portfolio-item">
+                <a href="./crossfade.html">
+                    <div class="hover-image"></div>
+
+                    <img src=<%=require( "../images/crossfade-image.png") %>>
+                    <div class="overlay">
+                        <span class="title">Cross-fade effect</span>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="portfolio-third">
+            <div id="game-scene" class="portfolio-item">
+                <a href="./game.html">
+                    <div class="hover-image"></div>
+                    <img src=<%=require( "../images/game-image.png") %> >
+                    <div class="overlay">
+                        <span class="title">Javascript game</span>
+                    </div>
+                </a>
+            </div>
+             <div id="church-scene" class="portfolio-item">
+                <a href="http://okkim-portfolio-church.azurewebsites.net/#/">
+                    <div class="hover-image"></div>
+                    <img src=<%=require( "../images/church-image.png") %> >
+                    <div class="overlay">
+                        <span class="title">Church Management with Angular</span>
+                    </div>
+                </a>
+            </div>
+            <div id="reveal-scene" class="portfolio-item">
+                <a href="./reveal.html">
+                    <div class="hover-image"></div>
+                    <img src=<%=require( "../images/reveal-image.png") %> >
+                    <div class="overlay">
+                        <span class="title">Revealing effect</span>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a href="http://www.freepik.com">Designed by Freepik</a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+</body>
+
+</html>

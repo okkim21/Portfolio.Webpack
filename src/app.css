@@ -1,0 +1,293 @@
+/*----------------------------------------
+Base styles
+-----------------------------------------*/
+html {
+    box-sizing: border-box;
+    height: 100%
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /*padding: 15px;*/
+    margin: 0;
+    height: 100%;
+    background-color: #edeeee;
+    font-family: "Open Sans", sans-serif;
+    color: #263C40;
+    font-size: 18px;
+}
+a {
+    color:#e0e0e0;
+    text-decoration: none;
+}
+a:hover {
+    color:#e0e0e0;
+    text-decoration: none;
+}
+
+/*----------------------------
+Header styles
+------------------------------*/
+.header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 35%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.main-image{
+    position: absolute;
+    background: url(../images/portfolio-main-image.png) no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.header-content {
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    padding: 20px;
+}
+.header h3 {
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-size: 30px;
+    opacity: .9;
+}
+.header .greeting {
+    letter-spacing: 4px;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.header .content01 {
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+.header .content02 {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+    opacity: 0.6;
+}
+.header .content02 p {
+    padding: 0;
+    margin: 0;
+}
+/*-----------------------------------
+Main Images styles
+-----------------------------------*/
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.main h2 {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 10px;
+    font-weight: 600;
+    margin: 30px;
+    opacity: .2;
+}
+.portfolio-first,
+.portfolio-second,
+.portfolio-third {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+}
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition:all .4s linear;
+}
+#scroll-scene {
+    flex-grow: 1;
+}
+#responsive-scene{
+    flex-grow: 2;
+}
+#video-scene {
+    flex-grow: 1;
+}
+#pin-scene {
+    flex-grow: 1;
+}
+#crossfade-scene {
+    flex-grow: 1;
+}
+#game-scene {
+    flex-grow: 1;
+}
+#church-scene {
+     flex-grow: 1;
+}
+#reveal-scene {
+    flex-grow: 2;
+}
+.portfolio-item .overlay {
+    position: absolute;
+    top: 50px;
+    left : 30px;
+    font-size: 17px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition:all .4s linear;
+}
+/*.overlay .link {*/
+    /*position: absolute;*/
+    /*top: 30px;*/
+    /*left: 0;*/
+    /*font-size: 15px;*/
+/*}*/
+.portfolio-item .hover-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition:all .4s linear;
+}
+#scroll-scene .hover-image {
+    background-color: #7c9a3b;
+}
+#responsive-scene .hover-image {
+    background-color: #eb415e;
+}
+#video-scene .hover-image {
+    background-color: #f6d247;
+}
+#taekwondo-scene .hover-image {
+    background-color: #ff0012;
+}
+#pin-scene .hover-image {
+    background-color: #00bec8;
+}
+#crossfade-scene .hover-image {
+    background-color: #ff7800;
+}
+#game-scene .hover-image {
+    background-color: #000;
+}
+#church-scene .hover-image {
+    background-color: #005659;
+}
+#reveal-scene .hover-image {
+    background-color: deeppink;
+}
+
+/*---------------------------------
+Mouse over
+----------------------------------*/
+.portfolio-item:hover img {
+    transform:scale(1.2);
+}
+.portfolio-item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+    top: 30px;
+    -webkit-transition-delay:.2s;
+    transition-delay:.2s;
+}
+.portfolio-item:hover .hover-image {
+    visibility: visible;
+    opacity: .9;
+    z-index: 3;
+}
+/*-------------------------------
+Footer styles
+----------------------------------*/
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    top: 5%;
+    background-color: lightgrey;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 11px;
+}
+.footer a {
+    color: gray;
+    opacity: .7;
+}
+/*---------------------------------------
+Responsive
+xs  < 768px
+sm  >= 768px
+md  >= 992px
+lg  >= 1200
+-----------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .header .content02 {
+        display: none;
+    }
+    .portfolio-first,
+    .portfolio-second,
+    .portfolio-third {
+        flex-wrap: wrap;
+    }
+
+    #scroll-scene,
+    #responsive-scene,
+    #video-scene,
+    #pin-scene,
+    #crossfade-scene,
+    #game-scene,
+    #church-scene,
+    #reveal-scene {
+        flex-grow: 1;
+    }
+    .footer {
+      top:180%
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header {
+        height: 35%;
+    }
+    .header-content {
+        font-size: 15px;
+    }
+    .header h3 {
+        font-size: 25px;
+    }
+    .header .content02 {
+        font-size: 13px;
+    }
+    .main {
+        margin-bottom: 2%;
+    }
+    .main h2 {
+        font-size: 30px;
+    }
+}

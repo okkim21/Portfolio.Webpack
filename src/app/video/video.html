@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,300,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <header class="header">
+        
+        <div class="logo"><img src=<%= require("./images/bee-logo.png") %>></div>
+        <nav class="navbar navbar-inverse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse top-navbar" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="donate"><a href="#">Donate</a></li>
+                </ul>
+             </div><!-- /.navbar-collapse -->
+        </nav>
+        <video autoplay loop id="bg-video">
+            
+            <source src=<%= require("./images/bees.mp4") %> type="video/mp4">
+            <source src=<%= require("./images/bees.webm") %> type="video/webm">
+            <source src=<%= require("./images/bees.ogv") %> type="video/ogg">
+        </video>
+        <section class="header-content">
+            <h1>Where the Bees Go</h1>
+            <p>Worldwide, bees are disappearing at an alarming rate.
+                Join the National Society for Bee Protection in its
+                fight against Colony Collapse Disorder and learn more
+                about how you can save the bees.</p>
+        </section>
+        <div class="clearfix"></div>
+    </header>
+    <section class="second-content">
+        <div class="content">
+            <h2>What is Colony Collapse Disorder</h2>
+            <p>Imagine a city without any adults, seemingly gone without a single trace. They haven't died,  they didn't move, they are just...gone.   Children are left roaming the streets, babies still in their cribs, while the mayor sits in his office wondering what the hell happened.  </p>
+            <p>This scenario is similar to how colony collapse disorder (CCD) affects bee colonies.   A colony suspected of CCD has no adult bees, and strangely enough, few or no dead bees in or around the hive.  The colony contains pollen and honey, a queen and capped brood.   Without adults, inefficient young workers are left to sustain the hive.  With a weak and depleted workforce the colony can't maintain itself and collapses.</p>
+        </div>
+        <div class="image">
+            
+            <img src=<%= require("./images/beesOnHive.png") %> alt="">
+        </div>
+    </section>
+    <section class="third-content">
+        <div class="third-text">
+            <h2>What Causes CCD?</h2>
+            <p>While much research has been done on CCD, scientists have yet to determine the exact cause.
+                Initially environmentalists were concerned that the increased usage of pesticides in farming was contributing to CCD.  Newer research indicates that stress could be causing colony collapse.  A more balanced theory is that stress and a combination of factors such as pesticides, mites, disease, and changes in beekeeping practice cause CCD.</p>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <section class="take-action">
+        <div class="take-action-info">
+            <h2>What Can I Do?</h2>
+            <p>Educating yourself is the first step.  You can also donate to our ongoing research to determine the cause of Colony Collapse Disorder.  We also donate a portion of funds to ethical beekeeping.  Volunteers are always welcome, view our About page for a list of chapters to find the location nearest you.  If you are interested in learning more about beekeeping, you can <a href="#">request a complimentary copy</a> of One for the Honey: A Beginner's Guide to Bees and Beekeeping.</p>
+        </div>
+        <div class="take-action-aside">
+            <h2>Take Action</h2>
+            <button>Learn More</button>
+            <button>Donate</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>All content on this site &copy; National Society of Bee Protection</p>
+    </footer>
+</body>
+</html>
