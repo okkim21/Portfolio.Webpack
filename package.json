@@ -24,7 +24,6 @@
     "image-webpack-loader": "^3.3.0",
     "imagesloaded": "^4.1.2",
     "import-loader": "^1.0.1",
-    "jquery": "^3.2.1",
     "node-sass": "^4.5.2",
     "postcss-loader": "^2.0.2",
     "purifycss-webpack": "^0.6.2",
@@ -36,5 +35,11 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "express": "^4.15.2",
+    "jquery": "^3.2.1"
   }
 }
