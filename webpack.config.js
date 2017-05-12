@@ -32,7 +32,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[hash:12].bundle.js'
-
     },
     module: {
         rules: [
@@ -47,8 +46,8 @@ module.exports = {
                     "url-loader?name=/images/[name].[hash:12].[ext]&limit=10000"
                 ]
             },
-            { test: /\.(woff2?|svg)$/, loader: 'file-loader?limit=10000&name=fonts/[name].[ext]' },
-            { test: /\.(ttf|eot)$/, loader: 'file-loader?name=fonts/[name].[ext]' },
+            { test: /\.(woff2?|svg)$/, loader: 'file-loader?limit=10000&name=/fonts/[name].[ext]' },
+            { test: /\.(ttf|eot)$/, loader: 'file-loader?name=/fonts/[name].[ext]' },
             { test: /\.(mp4|webm|ogv)$/, loader: 'file-loader?name=images/[name].[ext]' }
         ]
     },
