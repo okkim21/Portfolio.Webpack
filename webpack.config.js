@@ -31,8 +31,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[hash:12].bundle.js',
-        publicPath:'/'
+        filename: '[name].[hash:12].bundle.js'
+
     },
     module: {
         rules: [
@@ -44,7 +44,7 @@ module.exports = {
                 test: /\.(jpg|png|gif|svg)$/,
                 exclude: /node_modules/,
                 use: [
-                    "url-loader?name=images/[name].[hash:12].[ext]&limit=10000"
+                    "url-loader?name=/images/[name].[hash:12].[ext]&limit=10000"
                 ]
             },
             { test: /\.(woff2?|svg)$/, loader: 'url-loader?limit=10000&name=fonts/[name].[ext]' },
